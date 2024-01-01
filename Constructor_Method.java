@@ -44,10 +44,12 @@ public class Constructor_Method {  //Main method
     MyPoint point1=new MyPoint(x1,y1);
     MyPoint point2=new MyPoint(x2,y2);
     MyPoint point3=new MyPoint(x3,y3);
+   
     double d1=point1.Distance();
     double d2=point2.Distance(x1,y1);
     double d3=point3.Distance(point2);
-        System.out.println("Point A is at the distance of :"+d1+" from the origin, Point B is at the distance of"+d2+"from A, Point C is at the distance of "+d3+"from B");
-    
+    double d4=point1.Distance(point3);
+        System.out.println("Point A is at the distance of :"+d1+" from the origin\nPoint B is at the distance of"+d2+"from A\nPoint C is at the distance of "+d3+"from B");
+        System.out.println("Distance between A and C="+d4);
        }
 }
